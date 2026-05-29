@@ -1,7 +1,6 @@
 
-<<<<<<< HEAD
 # Estuary Skynet Edition Skin for Kodi 21 Omega
-=======
+
 
 This is a spinoff of the main Estuary Mod V2 skin (full details still found below). The goal behind this version was to focus on adding independent skin settings color customization in as many places as possible. More things to come...this is a very new project that was just done in a few days in late May 2026.
 
