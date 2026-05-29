@@ -1,10 +1,15 @@
-Estuary Skynet Edition Skin for Kodi 21 Omega
+
+<<<<<<< HEAD
+# Estuary Skynet Edition Skin for Kodi 21 Omega
+=======
 
 This is a spinoff of the main Estuary Mod V2 skin (full details still found below). The goal behind this version was to focus on adding independent skin settings color customization in as many places as possible. More things to come...this is a very new project that was just done in a few days in late May 2026.
 
 I have been an IT engineer since 2002. These days I am an AWS Cybersecurity specialist. What i am not is a software developer...I used Google Gemini to help me with this entire project and others. I am just as hesitant about AI taking over as the next guy. Pretty sure Skynet will be real life soon enough. In the meantime i figured i would use AI for my benefit to teach/help me with dev projects like this that my non-programmer brain could never do on my own.
 
+
 Here are the only files that have been edited thus far:
+
 
 addon.xml
 
@@ -27,22 +32,27 @@ Home.xml
 includes_Home.xml
 
 
+
 And here is why:
 
 * Narrowed down the home screen sidebar. Reason being, I only have Movies, TV Shows, and Sports on my sidebar. The right frame is filled with posters of movies, tv shows etc that pull from On-Deck and Recently added files via PlexKodiConnect. Essentially, i never even need to leave my home screen unless im looking for a movie that i havent watched in a while. I figure why not narrow down the sidebar and give more real estate to the posters.
+
+
 
 * Added new independent color customization options throughout the skin settings menu.
 
   * Sidebar color can be chosen via Skin Settings>Home
   * Border color, media tag color, ratings text color...all of the options under Skin Settings>General are wired into the new colorpicker that is also available on my GitHub page.
-  * Two new color buttons under Video OSD skin settings. These will allow you to change the color of the title text ...example, Project Hail Mary (2026)
-  * This text can be made whatever color you want with the new colorpicker wired in. There is also a shadowtext color button to allow you to, for example, put a neon pink border/outline around the Title letters.
+  * Two new color buttons under Video OSD skin settings. These will allow you to change the color of the title text ...example, Project Hail Mary (2026) <-- This text can be made whatever color you want with the new colorpicker wired in. There is also a shadowtext color button to allow you to, for example, put a neon pink border/outline around the Title letters.
+
+
 
 * Video OSD skin settings: Title text resizing options have been added. The normal "default size" is still there + 3 more new sizes that gradually get bigger.
-
 * Remapping of the Video OSD: Coordinate mapping of the title text row, the genre text (drama/comedy,etc) below it, and the media tags below that were all slightly shifted to remove text row "bleed-over" that was occurring when the larger title text sizes were utilized. Additionally, the play/pause controls line of the OSD has been moved above the progress bar line. This was the only way I could make the OSD still look nice and not too cluttered when using the largest title row text option.
 
-Further notes on the Colorpicker addon: It is wired up throughout this Estuary Skynet Edition skin. Pretty much everywhere that the native Kodi color palette is called has been edited to utilize the new colorpicker. So if you want to play around my version of this skin you should get the colorpicker addon as well. In the words of Forrest Gump...They go together like peas n' carrots.
+
+
+Further notes on the Colorpicker addon: It is wired up throughout this Estuary Skynet Edition skin . Pretty much everywhere that the native Kodi color palette is called has been edited to utilize the new colorpicker. So if you want to play around my version of this skin you should get the colorpicker addon as well from the same Github page. In the words of Forrest Gump...They go together like peas n' carrots.
 
 
 
