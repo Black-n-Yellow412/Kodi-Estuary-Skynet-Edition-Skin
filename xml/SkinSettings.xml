@@ -1832,17 +1832,20 @@
 			<param name="breadcrumbs_label" value="$LOCALIZE[5] / $LOCALIZE[166]" />
 		</include>
 		<include>BottomBar</include>
+		
 		<control type="group">
 			<include>OpenClose_Left</include>
 			<control type="image">
-				<left>66.5</left>
+				<left>40</left>
 				<bottom>20</bottom>
-				<width>337</width>
-				<height>100</height>
-				<texture>dialogs/logo.png</texture>
+				<width>360</width>
+				<height>160</height>
+				<aspectratio align="left" aligny="center">keep</aspectratio>
+				<texture>special://skin/extras/skynet-logo.png</texture>
 				<animation effect="slide" end="0,-70" time="0" condition="Skin.HasSetting(touchmode)">Conditional</animation>
 			</control>
 		</control>
+		
 		<control type="textbox" id="6">
 			<include>OpenClose_Right</include>
 			<description>description area</description>

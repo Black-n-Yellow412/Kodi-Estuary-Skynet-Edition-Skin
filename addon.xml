@@ -31,29 +31,21 @@
 		</item>
     	</menu>
  	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">Estuary MOD V2 skin by Guilouz, adapted for Omega by PvD</summary>
-		<description lang="en_GB">Estuary MOD V2 is a mod from Estuary by Guilouz for Kodi 18 and adapted for Kodi 21 (Omega) by PvD from Kodinerds Community. It attempts to be easy for first time Kodi users to understand and use.</description>
+	
+<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Kodi Estuary Skynet Edition</summary>
+		<description lang="en_GB">This is a heavily customized spinoff of the amazing Kodi Estuary MOD V2 by B-Jesch skin. It features an integrated, custom colorpicker palette and a narrowed-down sidebar on the Home screen (more real-estate for posters and widgets). This spinoff skin was reimagined with one main goal: Color choice independency. There are multiple new color options throughout the skin settings UI which allow the user to make this Estuary skin a work of their own creative artistic imagination. The existing Estuary MOD V2 color settings have been kept in place as well but remapped to the new colorpicker (also available on the Black-n-Yellow412 Github page). </description>
 		<disclaimer lang="en_GB">For better experience, be sure to install all addons required by the skin.</disclaimer>
 		<platform>all</platform>
 		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
-		<source>https://github.com/b-jesch/skin.estuary.skynet/tree/Omega</source>
-			<assets>
-				<icon>resources/icon.png</icon>
-				<fanart>resources/fanart.jpg</fanart>
-				<screenshot>resources/screenshots/screenshot_1.png</screenshot>
-				<screenshot>resources/screenshots/screenshot_2.png</screenshot>
-				<screenshot>resources/screenshots/screenshot_5.png</screenshot>
-				<screenshot>resources/screenshots/screenshot_7.png</screenshot>
-				<screenshot>resources/screenshots/screenshot_8.png</screenshot>
-				<screenshot>resources/screenshots/screenshot_9.png</screenshot>
-				<screenshot>resources/screenshots/screenshot_10.png</screenshot>
-				<screenshot>resources/screenshots/screenshot_13.png</screenshot>
-				<screenshot>resources/screenshots/screenshot_14.png</screenshot>
-				<screenshot>resources/screenshots/screenshot_15.png</screenshot>
-			</assets>
-        <news>
-For a complete view of changes visit https://github.com/b-jesch/skin.estuary.skynet/tree/Omega
-        </news>
+		<source>https://github.com/Black-n-Yellow412/</source>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+		</assets>
+		<news>
+Estuary Skynet Edition Initialization Complete.
+		</news>
 	</extension>
+	
 </addon>
