@@ -1,6 +1,8 @@
 
 # Estuary Skynet Edition Skin for Kodi 21 Omega
 
+***June 6, 2026: credit to Konel who introduced the icons-only sidebar for his modded version of Estuary recently on the Kodi forums. This Skynet adaptation is similar but a toggle button has been implemented under skin settings/home to allow a quick switch back to the more normal, wider sidebar with text***
+
 ***June 2, 2026: merged all upstream commits for the fixes and improvements develped for the main B-Jesch Estuary Mod V2 skin addon***
 
 
