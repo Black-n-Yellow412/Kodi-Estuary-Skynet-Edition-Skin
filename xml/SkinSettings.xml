@@ -1505,7 +1505,7 @@
 				
 				<control type="radiobutton" id="888900">
 					<include>DefaultSettingButton</include>
-					<label>UI Mode: Skynet Icons-Only Sidebar</label>
+					<label>Alternative Icons-Only Sidebar</label>
 					<onclick>Skin.ToggleSetting(SkynetIconsOnly)</onclick>
 					<onclick>RunScript(special://skin/ui_swap/swap.py)</onclick>
 					<selected>Skin.HasSetting(SkynetIconsOnly)</selected>
