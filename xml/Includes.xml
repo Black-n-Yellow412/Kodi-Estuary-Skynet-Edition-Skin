@@ -2489,12 +2489,14 @@
 						<animation effect="slide" end="0,-10" time="0" condition="String.IsEqual(Skin.Font,Arial)">Conditional</animation>
 						<font>font_clock</font>
 						<shadowcolor>$VAR[ShadowColorVar]</shadowcolor>
+						<textcolor>$INFO[Skin.String(OSDTimeColor)]</textcolor>
 						<height>200</height>
 						<width>auto</width>
 						<align>right</align>
 						<label>[B]$INFO[System.Time][/B]</label>
 					</control>
 				</control>
+
 				<control type="grouplist">
 					<right>10</right>
 					<top>70</top>
@@ -2512,6 +2514,7 @@
 						<textoffsetx>-8</textoffsetx>
 						<label>$INFO[System.AlarmPos]</label>
 						<visible>System.HasAlarm(shutdowntimer)</visible>
+						<textcolor>$INFO[Skin.String(OSDTimeColor)]</textcolor>
 					</control>
 					<control type="image">
 						<top>16</top>
@@ -2529,6 +2532,7 @@
 						<aligny>center</aligny>
 						<label>$INFO[System.Date]</label>
 						<visible>Skin.HasSetting(show_date)</visible>
+						<textcolor>$INFO[Skin.String(OSDTimeColor)]</textcolor>
 					</control>
 					<control type="label">
 						<height>50</height>
@@ -2536,6 +2540,7 @@
 						<aligny>center</aligny>
 						<label>$INFO[Window(Weather).Property(Current.Temperature),| ,]$INFO[System.TemperatureUnits]</label>
 						<visible>Skin.HasSetting(show_weatherinfo) + Skin.HasSetting(show_date) + Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na)]</visible>
+						<textcolor>$INFO[Skin.String(OSDTimeColor)]</textcolor>
 					</control>
 					<control type="label">
 						<height>50</height>
@@ -2543,6 +2548,7 @@
 						<aligny>center</aligny>
 						<label>$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
 						<visible>Skin.HasSetting(show_weatherinfo) + !Skin.HasSetting(show_date) + Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na)]</visible>
+						<textcolor>$INFO[Skin.String(OSDTimeColor)]</textcolor>
 					</control>
 					<control type="image">
 						<top>1</top>
@@ -2559,7 +2565,10 @@
 						<aligny>center</aligny>
 						<label>| </label>
 						<visible>Skin.HasSetting(show_inet) + !String.IsEmpty(System.InternetState)</visible>
+						<textcolor>$INFO[Skin.String(OSDTimeColor)]</textcolor>
 					</control>
+
+					
 					<control type="image">
 						<top>15</top>
 						<width>30</width>
@@ -3576,13 +3585,15 @@
 					<midtexture>colors/white50.png</midtexture>
 					<visible>!VideoPlayer.Content(livetv)</visible>
 				</control>
+
 				<control type="progress">
 					<height>8</height>
 					<info>Player.Progress</info>
 					<texturebg border="3" colordiffuse="60FFFFFF">colors/white50.png</texturebg>
-					<midtexture colordiffuse="$VAR[SkinColorVar]">colors/white.png</midtexture>
+					<midtexture colordiffuse="$INFO[Skin.String(OSDProgressBarColor)]">colors/white.png</midtexture>
 					<visible>!VideoPlayer.HasEpg + !Player.ChannelPreviewActive</visible>
 				</control>
+
 				<control type="ranges">
 					<top>2</top>
 					<height>6</height>
@@ -3615,35 +3626,39 @@
 					<righttexture>colors/white.png</righttexture>
 					<info>Player.SceneMarkers</info>
 				</control>
+
 				<control type="slider" id="401">
 					<left>5</left>
 					<top>-5</top>
 					<height>20</height>
 					<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_bar.png</texturesliderbar>
-					<textureslidernib colordiffuse="$VAR[SkinColorVar]">osd/progress/nub_bar.png</textureslidernib>
-					<textureslidernibfocus colordiffuse="$VAR[SkinColorVar]">colors/white.png</textureslidernibfocus>
+					<textureslidernib colordiffuse="$INFO[Skin.String(OSDProgressBarColor)]">osd/progress/nub_bar.png</textureslidernib>
+					<textureslidernibfocus colordiffuse="$INFO[Skin.String(OSDProgressBarColor)]">colors/white.png</textureslidernibfocus>
 					<visible>Player.SeekEnabled + !VideoPlayer.HasEpg + !Player.ChannelPreviewActive + !Player.FrameAdvance</visible>
 				</control>
+
 				<control type="slider" id="402">
 					<left>5</left>
 					<top>-5</top>
 					<right>30</right>
 					<height>20</height>
 					<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_bar.png</texturesliderbar>
-					<textureslidernib colordiffuse="$VAR[SkinColorVar]">osd/progress/nub_bar.png</textureslidernib>
-					<textureslidernibfocus colordiffuse="$VAR[SkinColorVar]">colors/white.png</textureslidernibfocus>
+					<textureslidernib colordiffuse="$INFO[Skin.String(OSDProgressBarColor)]">osd/progress/nub_bar.png</textureslidernib>
+					<textureslidernibfocus colordiffuse="$INFO[Skin.String(OSDProgressBarColor)]">colors/white.png</textureslidernibfocus>
 					<visible>Player.SeekEnabled + VideoPlayer.HasEpg + !Player.ChannelPreviewActive + !Player.FrameAdvance</visible>
 				</control>
 				
 					<include content="SeekBarProgress" condition="![Window.IsVisible(videoosd) | Window.IsVisible(musicosd)]"/>
 					<control type="group">
 						<bottom>$PARAM[time_bottom]</bottom> <height>30</height>
-						<control type="label">
-							<label>$VAR[SeekLabel]</label>
-							
+						
+					<control type="label">
+						<label>$VAR[SeekLabel]</label>
 						<font>font12</font>
+						<textcolor>$INFO[Skin.String(OSDBottomTextColor)]</textcolor>
 						<visible>![Integer.IsGreater(Playlist.Length,1) + Integer.IsGreater(Playlist.Position,0)] | Player.HasVideo</visible>
 					</control>
+					
 					<control type="label">
 						<right>30</right>
 						<label>$VAR[SeekLabel] - [COLOR white]$INFO[Playlist.Position, $LOCALIZE[554] ]$INFO[Playlist.Length,/][/COLOR]</label>
@@ -3651,39 +3666,46 @@
 						<font>font12</font>
 						<visible>Integer.IsGreater(Playlist.Length,1) + Integer.IsGreater(Playlist.Position,0) + !Player.HasVideo</visible>
 					</control>
+
 					<control type="label">
 						<left>260</left>
 						<right>570</right>
 						<label>$VAR[SeekTimeLabelVar]</label>
 						<font>font12</font>
+						<textcolor>$INFO[Skin.String(OSDBottomTextColor)]</textcolor>
 						<align>center</align>
 						<scroll>true</scroll>
 						<visible>!Player.ChannelPreviewActive + ![Window.IsVisible(visualisation) + Player.IsInternetStream] | VideoPlayer.HasEpg</visible>
 					</control>
+
 					<control type="group">
 						<visible>Skin.HasSetting(SmallOSDVideo) + !Window.IsVisible(visualisation)</visible>
 						<control type="label">
 							<label>$VAR[OsdMediaTimeVar]$INFO[Player.SeekTime, : ]$INFO[Player.Duration, / ]</label>
 							<font>font12</font>
 							<align>right</align>
+							<textcolor>$INFO[Skin.String(OSDTimeColor)]</textcolor>
 							<visible>[String.IsEqual(Skin.String(OsdMediaTime),0) | String.IsEmpty(Skin.String(OsdMediaTime))] + !VideoPlayer.HasEpg</visible>
 						</control>
 						<control type="label">
 							<label>$VAR[OsdMediaTimeVar]$INFO[Player.TimeRemaining, : ]</label>
 							<font>font12</font>
 							<align>right</align>
+							<textcolor>$INFO[Skin.String(OSDTimeColor)]</textcolor>
 							<visible>String.IsEqual(Skin.String(OsdMediaTime),1) + !VideoPlayer.HasEpg</visible>
 						</control>
 						<control type="label">
 							<label>$VAR[OsdMediaTimeVar]$INFO[PVR.EpgEventSeekTime, : ]$INFO[PVR.EpgEventDuration, / ]</label>
 							<font>font12</font>
 							<align>right</align>
+							<textcolor>$INFO[Skin.String(OSDTimeColor)]</textcolor>
 							<visible>[String.IsEqual(Skin.String(OsdMediaTime),0) | String.IsEmpty(Skin.String(OsdMediaTime))] + VideoPlayer.HasEpg</visible>
 						</control>
 						<control type="label">
 							<label>$VAR[OsdMediaTimeVar]$INFO[PVR.EpgEventRemainingTime, : ]</label>
 							<font>font12</font>
 							<align>right</align>
+							<textcolor>$INFO[Skin.String(OSDTimeColor)]</textcolor>
 							<visible>String.IsEqual(Skin.String(OsdMediaTime),1) + VideoPlayer.HasEpg</visible>
 						</control>
 					</control>
@@ -3691,23 +3713,28 @@
 						<label>$INFO[Player.TimeRemaining,$LOCALIZE[31134] : ]</label>
 						<font>font12</font>
 						<align>right</align>
+						<textcolor>$INFO[Skin.String(OSDTimeColor)]</textcolor>
 						<visible>Window.IsVisible(visualisation)</visible>
 					</control>
+
 					<control type="group">
 						<visible>!Skin.HasSetting(SmallOSDVideo) + !Window.IsVisible(visualisation)</visible>
 						<control type="label">
 							<label>$INFO[Player.TimeRemaining,$LOCALIZE[31134] : ]</label>
 							<font>font12</font>
+							<textcolor>$INFO[Skin.String(OSDTimeColor)]</textcolor>
 							<align>right</align>
 							<visible>!VideoPlayer.HasEpg</visible>
 						</control>
 						<control type="label">
 							<label>$INFO[PVR.EpgEventRemainingTime,$LOCALIZE[31134] : ]</label>
 							<font>font12</font>
+							<textcolor>$INFO[Skin.String(OSDTimeColor)]</textcolor>
 							<align>right</align>
 							<visible>VideoPlayer.HasEpg</visible>
 						</control>
 					</control>
+
 				</control>
 			</control>
 		</definition>

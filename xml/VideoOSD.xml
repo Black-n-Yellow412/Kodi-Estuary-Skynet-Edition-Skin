@@ -37,6 +37,7 @@
 				<width>310</width>
 				<label>$VAR[VideoOSDHelpTextVar]</label>
 				<scroll>true</scroll>
+				<textcolor>$INFO[Skin.String(OSDBottomTextColor)]</textcolor>
 			</control>
 			<control type="grouplist" id="200">
 				<left>460</left>

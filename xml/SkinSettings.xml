@@ -46,6 +46,14 @@
 					<label2>$INFO[Skin.String(OSDTitleColor)]</label2>
 					<onclick>RunScript(script.skynet.colorpicker,action=colorpicker,setting=OSDTitleColor)</onclick>
 				</control>
+				
+				<control type="button" id="1999">
+					<include>DefaultSettingButton</include>
+					<label>Custom OSD Time Color</label>
+					<label2>$INFO[Skin.String(OSDTimeColor)]</label2>
+					<onclick>RunScript(script.skynet.colorpicker,action=colorpicker,setting=OSDTimeColor)</onclick>
+				</control>
+				
 				<control type="button" id="199">
 					<label>Custom OSD Title Size</label>
 					<label2>$VAR[OSDTitleSizeVar]</label2>
@@ -55,6 +63,20 @@
 					<onclick condition="String.IsEqual(Skin.String(OSDTitleSize),Huge)">Skin.SetString(OSDTitleSize,Massive)</onclick>
 					<onclick condition="String.IsEqual(Skin.String(OSDTitleSize),Massive)">Skin.SetString(OSDTitleSize,Default)</onclick>
 				</control>
+				
+				<control type="button" id="1998">
+					<include>DefaultSettingButton</include>
+					<label>Custom OSD Progress Bar Color</label>
+					<label2>$INFO[Skin.String(OSDProgressBarColor)]</label2>
+					<onclick>RunScript(script.skynet.colorpicker,action=colorpicker,setting=OSDProgressBarColor)</onclick>
+				</control>
+				<control type="button" id="1997">
+					<include>DefaultSettingButton</include>
+					<label>Custom OSD Bottom Text Color</label>
+					<label2>$INFO[Skin.String(OSDBottomTextColor)]</label2>
+					<onclick>RunScript(script.skynet.colorpicker,action=colorpicker,setting=OSDBottomTextColor)</onclick>
+				</control>
+				
 				<control type="radiobutton" id="1091">
 					<label>$LOCALIZE[31474]</label>
 					<include>DefaultSettingButton</include>

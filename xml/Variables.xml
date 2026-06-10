@@ -1795,13 +1795,13 @@
 		<value condition="Player.Forwarding32x | Player.Rewinding32x">32x</value>
 	</variable>
 	<variable name="SeekLabel">
-		<value condition="Player.IsTempo">[COLOR white]$LOCALIZE[31142] : $INFO[Player.PlaySpeed][/COLOR]</value>
-		<value condition="!String.IsEmpty(Player.SeekStepSize)">[COLOR white]$LOCALIZE[773] $INFO[Player.SeekStepSize][/COLOR]</value>
-		<value condition="Player.Caching">[COLOR white]$LOCALIZE[15107][/COLOR]</value>
-		<value condition="Player.Paused">[COLOR white]$LOCALIZE[31260][/COLOR]</value>
-		<value condition="Player.Forwarding">[COLOR white]$LOCALIZE[31039] $VAR[VideoPlayerForwardRewindVar][/COLOR]</value>
-		<value condition="Player.Rewinding">[COLOR white]$LOCALIZE[31038] $VAR[VideoPlayerForwardRewindVar][/COLOR]</value>
-		<value condition="[Player.Playing + !Player.Caching] + !Player.Seeking">[COLOR white]$LOCALIZE[14086][/COLOR]</value>
+		<value condition="Player.IsTempo">$LOCALIZE[31142] : $INFO[Player.PlaySpeed]</value>
+		<value condition="!String.IsEmpty(Player.SeekStepSize)">$LOCALIZE[773] $INFO[Player.SeekStepSize]</value>
+		<value condition="Player.Caching">$LOCALIZE[15107]</value>
+		<value condition="Player.Paused">$LOCALIZE[31260]</value>
+		<value condition="Player.Forwarding">$LOCALIZE[31039] $VAR[VideoPlayerForwardRewindVar]</value>
+		<value condition="Player.Rewinding">$LOCALIZE[31038] $VAR[VideoPlayerForwardRewindVar]</value>
+		<value condition="[Player.Playing + !Player.Caching] + !Player.Seeking">$LOCALIZE[14086]</value>
 	</variable>
 	<variable name="SeekTimeLabelVar">
 		<value condition="Skin.HasSetting(SmallOSDVideo) + String.IsEmpty(Player.SeekNumeric)">$INFO[Player.Title,[B],[/B]]</value>
@@ -2342,4 +2342,9 @@
 		<value condition="!String.IsEmpty(Skin.String(InfoTextColor))">$INFO[Skin.String(InfoTextColor)]</value>
 		<value>$VAR[SkinColorVar]</value>
 	</variable>	
+	
+	<variable name="OSDTimeColorActualVar">
+		<value condition="!String.IsEmpty(Skin.String(OSDTimeColor))">$INFO[Skin.String(OSDTimeColor)]</value>
+		<value>white</value>
+	</variable>
 </includes>

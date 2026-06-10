@@ -1,6 +1,8 @@
 
 # Estuary Skynet Edition Skin for Kodi 21 Omega
 
+***June 10, 2026: more independent color choices have been added to several areas of the skin. These include but are not limited to the OSD progress bar, the hardcoded white timestamp and the hardcoded white text for the time + temperature on the home screen***
+
 ***June 6, 2026: credit to Konel who introduced the icons-only sidebar for his modded version of Estuary recently on the Kodi forums. This Skynet adaptation is similar and serves as an alternate option to the existing minimize home screen option already in the skin settings of Estuary Mod V2***
 
 ***June 2, 2026: merged all upstream commits for the fixes and improvements develped for the main B-Jesch Estuary Mod V2 skin addon***
