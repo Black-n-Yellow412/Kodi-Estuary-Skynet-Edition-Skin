@@ -1,7 +1,7 @@
 
 # Estuary Skynet Edition Skin for Kodi 21 Omega
 
-***June 12, 2026: a filtered version of the skin backup tool has been implemented directly into the skin settings under "Colors" via new backup and restore buttons. These will allow for complete backup of current color settings ONLY. So if you make significant tweaks to widgets or home screen items, etc...they will not be changed if you restore a "color theme" backup. Since there is now a plethora of new indpendent color choice areas of the Estuary Skynet skin...it can take time to design the artistic color theme you want. The idea is for the end user to be able to have as many color themes as they like which can be easily changed via a click of a button.***
+***June 12, 2026:*** a filtered version of the skin backup tool has been implemented directly into the skin settings under "Colors" via new backup and restore buttons. These will allow for complete backup of current color settings ONLY. So if you make significant tweaks to widgets or home screen items, etc... they will not be changed if you restore a "color theme" backup. Since there is now a plethora of new independent color choice areas of the Estuary Skynet skin...it can take time to design the artistic color theme you want. The idea is for the end user to be able to have as many color themes as they like which can be easily changed via a click of a button.
 
 
 ____________________________________________________________________________________________________________________________________________________
