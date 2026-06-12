@@ -1,12 +1,17 @@
 
 # Estuary Skynet Edition Skin for Kodi 21 Omega
 
-***June 10, 2026: more independent color choices have been added to several areas of the skin. These include but are not limited to the OSD progress bar, the hardcoded white timestamp and the hardcoded white text for the time + temperature on the home screen***
+***June 12, 2026: a filtered version of the skin backup tool has been implemented directly into the skin settings under "Colors" via new backup and restore buttons. These will allow for complete backup of current color settings ONLY. So if you make significant tweaks to widgets or home screen items, etc...they will not be changed if you restore a "color theme" backup. Since there is now a plethora of new indpendent color choice areas of the Estuary Skynet skin...it can take time to design the artistic color theme you want. The idea is for the end user to be able to have as many color themes as they like which can be easily changed via a click of a button.***
 
-***June 6, 2026: credit to Konel who introduced the icons-only sidebar for his modded version of Estuary recently on the Kodi forums. This Skynet adaptation is similar and serves as an alternate option to the existing minimize home screen option already in the skin settings of Estuary Mod V2***
 
-***June 2, 2026: merged all upstream commits for the fixes and improvements develped for the main B-Jesch Estuary Mod V2 skin addon***
+____________________________________________________________________________________________________________________________________________________
 
+June 10, 2026: more independent color choices have been added to several areas of the skin. These include but are not limited to the OSD progress bar, the hardcoded white timestamp and the hardcoded white text for the time + temperature on the home screen
+
+June 6, 2026: credit to Konel who introduced the icons-only sidebar for his modded version of Estuary recently on the Kodi forums. This Skynet adaptation is similar and serves as an alternate option to the existing minimize home screen option already in the skin settings of Estuary Mod V2
+
+June 2, 2026: merged all upstream commits for the fixes and improvements develped for the main B-Jesch Estuary Mod V2 skin addon
+____________________________________________________________________________________________________________________________________________________
 
 This is a spinoff of the main Estuary Mod V2 skin (full details still found below). The goal behind this version was to focus on adding independent skin settings color customization in as many places as possible. More things to come...this is a very new project that was just done in a few days in late May 2026.
 

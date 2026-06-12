@@ -901,6 +901,19 @@
 				<ondown>800</ondown>
 				<pagecontrol>60</pagecontrol>
 				<visible>Container(9000).HasFocus(4)</visible>
+				
+				<control type="button" id="898">
+					<include>DefaultSettingButton</include>
+					<label>Backup Color Theme</label>
+					<onclick>RunScript(script.skin.helper.skinbackup,action=backup,filter=Color)</onclick>
+				</control>
+				<control type="button" id="899">
+					<include>DefaultSettingButton</include>
+					<label>Restore Color Theme</label>
+					<onclick>RunScript(script.skin.helper.skinbackup,action=restore,filter=Color)</onclick>
+				</control>
+				
+		
 				<control type="button" id="803">
 					<include>DefaultSettingButton</include>
 					<label>$LOCALIZE[31220]</label>
