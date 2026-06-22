@@ -1536,16 +1536,8 @@
 					<label>Sidebar Background Color</label>
 					<label2>$INFO[Skin.String(SidebarColor)]</label2>
 					<onclick>RunScript(script.skynet.colorpicker,action=colorpicker,setting=SidebarColor)</onclick>														
-				</control>
-				
-				<control type="radiobutton" id="888900">
-					<include>DefaultSettingButton</include>
-					<label>Alternative Icons-Only Sidebar</label>
-					<onclick>Skin.ToggleSetting(SkynetIconsOnly)</onclick>
-					<onclick>RunScript(special://skin/ui_swap/swap.py)</onclick>
-					<selected>Skin.HasSetting(SkynetIconsOnly)</selected>
-				</control>
-				
+				</control>				
+			
 				<control type="button" id="10023">
 					<include>DefaultSettingButton</include>
 					<description>menu logo</description>
