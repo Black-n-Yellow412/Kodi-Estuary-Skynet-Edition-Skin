@@ -1,6 +1,6 @@
 # Kodi Media Center language file
 # Addon Name: Estuary MOD v2
-# Addon id: skin.estuary.skynet
+# Addon id: skin.estuary.modv2
 # Addon Provider: Guilouz, PvD
 msgid ""
 msgstr ""
@@ -3015,4 +3015,9 @@ msgstr ""
 #: /xml/SkinSettings.xml
 msgctxt "#31721"
 msgid "Localized title"
+msgstr ""
+
+#: /xml/DialogVideoInfo.xml
+msgctxt "#31722"
+msgid "Search 'Making Of' on Youtube"
 msgstr ""
