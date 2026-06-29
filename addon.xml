@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.estuary.skynet" version="1.4" name="Estuary Skynet" provider-name="Black-n-Yellow412">
+<addon id="skin.estuary.skynet" version="1.41" name="Estuary Skynet" provider-name="Black-n-Yellow412">
 	<requires>
 		<import addon="xbmc.python" version="3.0.1"/>
 		<import addon="xbmc.gui" version="5.17.0"/>
