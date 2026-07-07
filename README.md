@@ -1,6 +1,6 @@
 # Estuary Skynet Edition Skin for Kodi 21 Omega
 
-***July 7, 2026:*** more merged improvements and fixes from B-Jesch's Estuary Mod V2. New feauture added as well: skin color theme sync to motherboard RGB lighting color. Details on how this optional feature could work for you:
+***July 7, 2026:*** more merged improvements and fixes from B-Jesch's Estuary Mod V2. New feature added as well: skin color theme sync to motherboard RGB lighting color. Details on how this optional feature could work for you:
 
 - You need a modern motherboard with RGB headers that is used for LED strip lighting inside a PC case, RGB fans, etc.
 - OpenRGB for Windows is needed. Your motherboard may have came with some type of proprietary RGB software...this Kodi skin implementation was only meant for OpenRGB so install it and disable any other RGB apps on your PC
