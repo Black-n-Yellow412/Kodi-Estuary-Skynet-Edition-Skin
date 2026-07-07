@@ -1,16 +1,23 @@
 # Estuary Skynet Edition Skin for Kodi 21 Omega
 
+***July 7, 2026:*** more merged improvements and fixes from B-Jesch's Estuary Mod V2. New feauture added as well: skin color theme sync to motherboard RGB lighting color. Details on how this optional feature could work for you:
 
-
-***June 29, 2026:*** general cleanup and also merged improvements and fixes from B-Jesch's Estuary Mod V2
-
-
-
-***June 12, 2026:*** a filtered version of the skin backup tool has been implemented directly into the skin settings under "Colors" via new backup and restore buttons. These will allow for complete backup of current color settings ONLY. So if you make significant tweaks to widgets or home screen items, etc... they will not be changed if you restore a "color theme" backup. Since there is now a plethora of new independent color choice areas of the Estuary Skynet skin...it can take time to design the artistic color theme you want. The idea is for the end user to be able to have as many color themes as they like which can be easily changed via a click of a button.
-
+- You need a modern motherboard with RGB headers that is used for LED strip lighting inside a PC case, RGB fans, etc.
+- OpenRGB for Windows is needed. Your motherboard may have came with some type of proprietary RGB software...this Kodi skin implementation was only meant for OpenRGB so install it and disable any other RGB apps on your PC
+- Set up as many color profiles as you wish in OpenRGB and take specific note of the exact names that you call them. For example in my OpenRGB I have 5 different profiles: Sunset, Grurple, TealPurple, PurPink, and MintMidnight. 
+- In Kodi, customize all your colors throughout the numerous color button options within the Estuary Skynet skin settings. Come up with a theme that matches one of the OpenRGB color profiles you made. 
+- Go to Skin Settings>Colors>"Set LED Theme Name" and type in the name for this Kodi skin theme but ensure that it is the same exact name as the OpenRGB profile you want it to match with.
+- Go to Skin Settings>Colors>"Backup Color Theme" this will create a fresh backup of your current skin-wide color settings. Every color related setting you chose will be backed up INCLUDING the LED theme name setting. 
+- On your PC, navigate to wherever you had the Backup skin helper tool dump the zip file for the theme colors in the previous step. Locate the new zip file and manually add the color theme name into the file. for example: Estuary.skynet Skinbackup (2026-07-07 11.19.52).zip --> should become: Estuary.skynet Skinbackup Sunset (2026-07-07 11.19.52).zip
+- Follow these same steps to create more Kodi skin color themes, set the corresponding LED theme names, backup the color skin themes, and rename the zip files. 
+- Once you are done with all of your color themes all you "should" need to do is go to Skin Settings>Colors>"Restore Color Theme" and choose one of the properly named zip files from your backups. When it is done restoring your color theme just navigate back to the Kodi home screen to allow the skin to refresh. A few seconds later your PC's RGB lights (if connected to your motherboard and working correctly with OpenRGB) should automatically change to the desired color profile. For example if you made a yellow OpenRGB color profile called "Sunset" and you have a yellow/orange/red color theme going in Kodi also backed up to a zip file with "Sunset" in the filename...when you perform the restore your LED lighting should change to yellow while your Kodi colors change to yellow/orange/red. (both are identified by the "Sunset" name). 
 
 
 \---
+
+June 29, 2026:general cleanup and also merged improvements and fixes from B-Jesch's Estuary Mod V2
+
+June 12, 2026: a filtered version of the skin backup tool has been implemented directly into the skin settings under "Colors" via new backup and restore buttons. These will allow for complete backup of current color settings ONLY. So if you make significant tweaks to widgets or home screen items, etc... they will not be changed if you restore a "color theme" backup. Since there is now a plethora of new independent color choice areas of the Estuary Skynet skin...it can take time to design the artistic color theme you want. The idea is for the end user to be able to have as many color themes as they like which can be easily changed via a click of a button.
 
 June 10, 2026: more independent color choices have been added to several areas of the skin. These include but are not limited to the OSD progress bar, the hardcoded white timestamp and the hardcoded white text for the time + temperature on the home screen
 
