@@ -902,6 +902,13 @@
 				<pagecontrol>60</pagecontrol>
 				<visible>Container(9000).HasFocus(4)</visible>
 				
+				<control type="button" id="897">
+					<include>DefaultSettingButton</include>
+					<label>Set LED Theme Name</label>
+					<label2>$INFO[Skin.String(LEDThemeColor)]</label2>
+					<onclick>Skin.SetString(LEDThemeColor)</onclick>
+				</control>
+				
 				<control type="button" id="898">
 					<include>DefaultSettingButton</include>
 					<label>Backup Color Theme</label>

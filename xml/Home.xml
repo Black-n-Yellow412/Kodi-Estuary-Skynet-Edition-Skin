@@ -3,6 +3,7 @@
 	<onload>SetProperty(CurrentSkin,skin.estuary.skynet,home)</onload>
 	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;group=mainmenu)</onload>
 	<onload>RunScript(skin.estuary.skynet,getKodiSetting,videolibrary.showunwatchedplots)</onload>
+	<onload>RunScript(special://skin/scripts/rgb_sync.py)</onload>
 	<defaultcontrol>9000</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
 	<controls>
